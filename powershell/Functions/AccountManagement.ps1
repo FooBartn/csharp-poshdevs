@@ -41,7 +41,7 @@ function Enter-Bank () {
                     $Account = [OpenAccount]::new($env:USERNAME, $Amount)
                 }
                 else {
-                    $Account.OpenAccount($Amount)
+                    Write-Message "Account is already open"
                 }
             }
             2 {
